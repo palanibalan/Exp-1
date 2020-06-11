@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<link href="A1.css" rel="stylesheet">
+
+</style>	
+</head>
+<body>
+<center>
+<ul>
+<li class="dropdown">
+    <a onclick="myfunction()" class="dropbtn">MBLOCK</a>
+    <div id="myDropdown"class="dropdown-content">
+      <a href="https://planet.mblock.cc/project/266433" target="_blank">Emotion Recognition</a>
+      <a href= "https://planet.mblock.cc/project/181024"target="_blank">SMILE SCORE</a>
+      <a href= "https://planet.mblock.cc/project/266428"target="_blank">Age and Gender recognition</a>
+       <a href= "https://planet.mblock.cc/project/266434"target="_blank">Handwriting recoginition</a>
+
+
+      
+    </div>
+</li>
+</ul>
+</div>
+<div>
+<ul>
+<li class="dropdown1">
+    <a onclick="myfunction1()" class="dropbtn1">SCRATCH</a>
+    <div id="myDropdown1"class="dropdown-content1">
+      <a href="https://scratch.mit.edu/projects/402343682/" target="blank">SCRATCH</a>
+     
+
+    </div>
+</li>
+</ul>
+</center>
+<script type="text/javascript">
+	
+	function myfunction() {
+		document.getElementById("myDropdown").classList.toggle("show");
+	}
+	window.onclick = function(event){
+		if (!event.target.matches('.dropbtn')){
+			var dropdowns = document.getElementByClassName("dropdown-content");
+			var i;
+
+			for (i = 0; i <dropdowns.length; i++) {
+				if (openDropdown.classList.contains('show')) {
+       				 openDropdown.classList.remove('show');
+      			}
+			}
+		}
+	}
+
+
+	function myfunction1() {
+		document.getElementById("myDropdown1").classList.toggle("show1");
+	}
+	window.onclick = function(event){
+		if (!event.target.matches('.dropbtn1')){
+			var dropdowns = document.getElementByClassName("dropdown-content1");
+			var i;
+
+			for (i = 0; i <dropdowns.length; i++) {
+				if (openDropdown.classList.contains('show1')) {
+       				 openDropdown.classList.remove('show1');
+      			}
+			}
+		}
+	}
+
+</script>
+
+
+</body>
+</html>
